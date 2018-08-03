@@ -53,4 +53,11 @@ cdip_anime  % the speed is 15 in the following animation.
 save_avi('sample.avi', 10, frame)
 ```
 
-![alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+**sample.avi**
+
+![alt text](https://github.com/syuntoku14/InvertedPendulumAnimationTools/blob/images/unstable.gif)
+
+
+**Enjoy your controlling!!**
+
+![alt text](https://github.com/syuntoku14/InvertedPendulumAnimationTools/blob/images/stable.gif)
