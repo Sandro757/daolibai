@@ -16,7 +16,9 @@ The original code of "cdip_anime.m" is available  at [here](http://www.maizuru-c
 * "t": time(second)
 * "z": cart position
 * "theta": pendulum clockwise angle from vertical (up)
-* "Lp": length of the pendulum
+* "Lp": length of the pendulum(This is already set in the inv_param.mat)
+
+![alt text](https://github.com/syuntoku14/InvertedPendulumAnimationTools/blob/images/cart_pend.JPG)
 
 After running "cdip_anime", you can save the animation as .avi file by 'save_avi' command.
 
