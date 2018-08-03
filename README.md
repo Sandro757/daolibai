@@ -18,6 +18,8 @@ The original code of "cdip_anime.m" is available  at [here](http://www.maizuru-c
 * "theta": pendulum clockwise angle from vertical (up)
 * "Lp": length of the pendulum(This is already set in the inv_param.mat)
 
+When you type "cdip_anime.m", you will required to type the speed to draw in the Command Window. 15 is normal speed.
+
 ![alt text](https://github.com/syuntoku14/InvertedPendulumAnimationTools/blob/images/cart_pend.JPG)
 
 After running "cdip_anime", you can save the animation as .avi file by 'save_avi' command.
@@ -30,7 +32,7 @@ for filename in *.avi; do ffmpeg -i $filename -strict -2 ${filename%.avi}.mp4; d
 
 ### Sample Code
 
-**example.m:**
+**sample.m:**
 
 ```matlab
 clear all;
@@ -39,14 +41,16 @@ load('inv_param.mat')
 
 % impulse response of the inversed pendulum
 figure(1);
-t = 0:0.001:1.0;
+t = 0:0.005:1.0;
 [output, t] = impulse(sys_tf, t);
 impulse(sys_tf, t)
 z = output(:, 1);
 phi = output(:, 2);
 theta = -phi;
-title('Open-Loop Impulse Response')
 
-cdip_anime
+title('Open-Loop Impulse Response')
+cdip_anime  % the speed is 15 in the following animation.
 save_avi('sample.avi', 10, frame)
 ```
+
+![alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)

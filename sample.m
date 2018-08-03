@@ -4,7 +4,7 @@ load('inv_param.mat')
 
 % impulse response of the inversed pendulum
 figure(1);
-t = 0:0.001:1.0;
+t = 0:0.005:1.0;
 [output, t] = impulse(sys_tf, t);
 impulse(sys_tf, t)
 z = output(:, 1);
